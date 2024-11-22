@@ -29,8 +29,12 @@ if __name__ == "__main__":
     # 데이터 생성
     x, y = generate_t_distribution_data(n_samples, degrees_of_freedom)
 
+    # ID 컬럼 생성 (0~9까지 랜덤하게 배정)
+    ids = np.random.choice(10, size=n_samples)  # 0~9 사이의 숫자를 랜덤 배정
+
     # 데이터를 Pandas DataFrame으로 변환
     data = pd.DataFrame({
+        "id": ids,  # ID 값
         "x": x,  # x 값
         "y": y   # y 값
     })
