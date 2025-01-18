@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "t-menet"
+version = "0.1.0"
+description = ""
+authors = ["dk-moon <dkmoon0530@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
